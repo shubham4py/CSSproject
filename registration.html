@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="icon" type="image/x-icon" href="/images/logo.ico">
+    <style>
+        * {margin: 0;padding: 0;}
+        body {font-family: 'Arial', sans-serif; background-color: #f5f5f5;}
+
+.head {
+    width: 99% ;
+    height: 250px;
+    font-size: 25px;
+    color:gold;
+    font-family: optimaregular;
+
+    border: 2px solid green;
+    display: block;
+    background: url(images/registration.png);
+    text-align:left;
+    object-fit: scale-down; 
+    background-repeat: no-repeat;
+    background-size: 101% 130%;}
+.maintext{margin-top: 160px; padding: 0px 50px;}
+.text{color: whitesmoke; padding: 0px 22px;}
+.marquee{width: 99%; font-size: 22px; background-color: gold;}
+
+        .register-block {
+                width: 98%;
+                height: fit-content;
+            display: flex;
+            align-items: center;
+        }
+
+        .registration-form {
+            width: 25%;
+            padding: 20px;
+            border-radius: 30px;
+            box-shadow: 0 0 20px gray;
+            background-color: #fff;
+            margin-left: 20px;
+            margin: 10px;
+        }
+        :hover.registration-form{
+            transition: all;
+            border-radius: 30px;
+            margin-left: 5px;
+            transition: all .4s ease-in-out;
+            box-shadow: 5px 0px 3px gray;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            /* align-items: center; */
+        }
+
+        input,
+        select {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            background-color: #4caf50;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+
+        label {
+            display: inline-block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+
+        .img-block {
+            width: 65%;
+            margin: 10px;        }
+.checkbox{display:inline-flex; margin: 0px;}
+
+
+    </style>
+</head>
+
+<body>
+    <div class="head">
+        <div class="maintext">
+            <h2>Venture into the lands for new adventures</h2>
+            <p class="text"><big>#AwesomeAssam</big></p>
+        </div>
+    </div>
+    <marquee behavior="alternate" direction="right" scrollamount="12" class="marquee">
+        Explore a world unlike any other
+    </marquee>
+    <div class="register-block">
+        <div class="img-block">
+                <img src="images/reg2.jpg" width="100%" height="900">
+            </div>
+        <div class="registration-form">
+            <form>
+                <label class="form-header">Registration Form :</label><br>
+                Name: <input type="text" name="" id="" required placeholder="Enter full name"> <br>
+                Age: <input type="number" name="" id="" required placeholder="Age"><br>
+                Phone: <input type="tel" name="" id="" required placeholder="Phone number" maxlength="14"> <br>
+                Email: <input type="email" name="" id="" placeholder="Email address"> <br>
+
+                Registration time: <input type="time" name="" id=""> <br>
+                Date and time: <input type="datetime-local" name="" id=""> <br>
+                Gender: 
+                <div class="radio-group">
+                        <label>
+                            <input type="radio" value="Male" name="Gender" id="">
+                            <span>Male</span>
+                        </label>
+                
+                        <label>
+                            <input type="radio" name="Gender" id="">
+                            <span>Female</span>
+                        </label>
+                    </div>
+              
+                <br><br>
+                Select state:
+                <select name="" id="" width="20">
+                    <option value="--">Select Option</option>
+                    <option value="AP">Aandra Pradesh</option>
+                    <option value="AR">Arunachal Pradesh</option>
+                    <option value="AS">Assam</option>
+                    <option value="BR">Bihar</option>
+                    <option value="CG">Chattisgarh</option>
+                    <option value="GA">Goa</option>             
+                    <option value="GJ">Gujrat</option>
+                    <option value="HR">Haryana</option>
+                    <option value="HP">Himachal Pradesh</option>
+                    <option value="JK">Jammu & Kashmir</option>
+                    <option value="JH">Jharkhand</option>
+                    <option value="KA">Karnatak</option>
+                    <option value="KL">Kerala</option>
+                    <option value="MP">Madhya Pradesh</option>
+                    <option value="MH">Maharastra</option>
+                    <option value="MN">Manipur</option>
+                    <option value="ML">Meghalaya</option>
+                    <option value="MZ">Mizoram</option>
+                    <option value="NL">Nagaland</option>
+                    <option value="OL">Odisa</option>
+                    <option value="PB">Punjab</option>
+                    <option value="RJ">Rajasthan</option>
+                    <option value="SK">Sikhim</option>
+                    <option value="TN">Tamilnadu</option>
+                    <option value="TR">Telangana</option>
+                    <option value="UK">Utarakhand</option>
+                    <option value="UP">Uttar Pradesh</option>
+                    <option value="WB">West Bengal</option>
+                    <option value="DL">Delhi</option> 
+                </select><br>
+                <div class="checkbox">I Agree to Assam's Tourism Policies :<input type="checkbox"></div>
+                <br><button type="submit">Register</button>
+            </form>
+        </div>
+
+    </div>
+</body>
+
+</html>
